@@ -1,5 +1,21 @@
 {{#each beer}}
 
+<div class="singleBeerContainer">
+
 {{>beerP}}
+
+</div>
+
+<div class="additionalInfo">
+    <p> <b>First brewed:</b> {{this.first_brewed}}</p>
+<p> <b>Yeast</b>
+</b>  {{this.ingredients.yeast}}</p>
+<p> <b>Food pairing:</b> {{this.food_pairing}}</p>
+<p> <b>Brewers Tips: </b> {{this.brewers_tips}}</p>
+
+
+</div>
+
+
 
 {{/each}}
